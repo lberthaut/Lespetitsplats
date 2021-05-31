@@ -1,0 +1,40 @@
+$searchbarcolor: #E7E7E7;
+
+
+body{
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#logo{
+    width: 268px;
+    height: 93px;
+}
+
+#searchbarr{
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    background-color: $searchbarcolor;
+    border: none;
+}
+
+.search-barr-button{
+    display: flex;
+    align-items: center;
+    background-color: $searchbarcolor;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-button{
+    background-color: $searchbarcolor;
+    font-size: 32px;
+    border-radius: 0px 5px 5px 0px;
+    padding-right: 20px;
+}
