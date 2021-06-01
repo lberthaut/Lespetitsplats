@@ -1,6 +1,9 @@
     var recipesElement = document.querySelectorAll('.recipes-list');
 
     for(recipe of recipes){
+      for(ingredient of recipes.ingredients){
+        var ingr = `<p class="item">${recipe.ingredients.ingredient}</p>`
+      };
         recipesElement.innerHTML +=`<article class="recipe-card">
         <div class="img-recipe" alt="photo de la recette">
           </div>
@@ -11,7 +14,7 @@
           <p class=>${recipe.time}</p>
         </div>
         <aside class="items">
-          <p class="item">${recipe.ingredients.ingredient}</p> 
+           ${ingr}
           <p class="quantity">${recipe.ingredients.quantity} ${recipe.ingredients.unit}</p>
         </aside>
         <aside class="craft">
