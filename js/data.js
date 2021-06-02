@@ -1,4 +1,4 @@
-const recipes = [
+let recipes = [
     {
         "id": 1,
         "name" : "Limonade de Coco",
@@ -1722,3 +1722,5 @@ const recipes = [
         "ustensils":["rouleau à patisserie","fouet"]
     }
 ]
+
+recipes = recipes.map(recipe => new Recipe(recipe));
