@@ -5,9 +5,9 @@ $backgrounddatas: #E7E7E7;
 
 
 body{
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 2%;
+    width: 1240px;
+    margin: 0 auto;
+    padding-top: 3%;
 }
 
 header{
@@ -40,6 +40,15 @@ header{
     font-size: 32px;
     border-radius: 0px 5px 5px 0px;
     padding-right: 20px;
+}
+
+#dropdowns{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 25px;
 }
 
 #recipes-list{

@@ -6,4 +6,9 @@ for(let recipe of recipes){
 }
 
 
-/*Affichage des dropdown*/
+/*Affichage du dropdown Ingredients*/
+var ingredientsDropdown = document.getElementsByClassName('ingredients-list');
+
+for(let ingredient of ingredients){
+  ingredientsDropdown.innerHTML += ingredient.show();
+}
