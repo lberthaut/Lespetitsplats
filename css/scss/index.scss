@@ -5,8 +5,8 @@ $backgrounddatas: #E7E7E7;
 
 
 body{
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 7%;
+    padding-right: 7%;
     padding-top: 2%;
 }
 
@@ -42,16 +42,19 @@ header{
     padding-right: 20px;
 }
 
-.recipes-list{
+#recipes-list{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
 }
 
 .recipe-card{
     width: 380px;
     height: 364px;
+    margin: 1px;
 }
 
 .img-recipe{
@@ -74,10 +77,11 @@ header{
     font-size: 18px;
     min-width: 60%;
     max-width: 70%;
-    margin-right: 5px;
+    margin-right: 35px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin-bottom: 20px;
 }
 
 .recipe-time{
@@ -85,6 +89,8 @@ header{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 .recipe-time>p{
@@ -93,7 +99,7 @@ header{
 }
 
 .items, .craft{
-    width: 46%;
+    width: 49%;
     height: 106px;
     display: flex;
     flex-direction: column;
@@ -117,13 +123,11 @@ aside p{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    margin-right: 5px;
 }
 
 .ingredient{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }

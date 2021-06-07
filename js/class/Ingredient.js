@@ -5,11 +5,14 @@ class Ingredient{
     show(){
         if(this.unit == undefined){
             this.unit = '';
-        }else if(this.quantity == undefined){
-            document.querySelectorAll('.quantity').style.display= 'none';
         };
+        /* if(this.quantity == undefined){
+            document.querySelectorAll('.quantity').style.display= 'none';
+        }; */
+        var unit = this.unit;
+        var unitSplit = unit.split(' ')
         return `<div class="ingredient"><p>${this.ingredient}</p>
-          <p class="quantity">: ${this.quantity} ${this.unit}</p></div>`;
+          <p class="quantity">: ${this.quantity} ${unitSplit[0]}</p></div>`;
     }
 }
 
