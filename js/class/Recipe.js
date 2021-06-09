@@ -17,7 +17,7 @@ class Recipe{
           <i class="far fa-clock"></i>
           <p class=>${this.time} min</p>
         </div>
-        <aside class="items"
+        <aside class="items">
             ${ingredientString}
         </aside>
         <aside class="craft">

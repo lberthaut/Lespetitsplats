@@ -1,61 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="utf-8">
-    <title>Les Petits Plats</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://kit.fontawesome.com/959f234b81.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <title>Les Petits Plats</title>
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="https://kit.fontawesome.com/959f234b81.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-            <img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" id ="logo" alt="Logo de l'entreprise Les Petits Plats">
-    </header>
-    <nav>
-        <form class="search-barr-button">    
-           <input type="text" name="searchbarr" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette" id="searchbarr" class="form-control form-control-lg">
-           <i class="fas fa-search search-button"></i>
-         </form>
-    </nav>
-    <h1></h1>
-    <nav id="dropdowns">
-      <div class="dropdown-ingredients">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-          Ingredients
-        </button>
-        <div class="dropdown-menu ingredients-list">
-        </div>
+  <header>
+    <img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" id="logo"
+      alt="Logo de l'entreprise Les Petits Plats" />
+  </header>
+  <nav>
+    <form class="search-barr-button">
+      <input type="text" name="searchbarr" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette"
+        id="searchbarr" class="form-control form-control-lg" />
+      <i class="fas fa-search search-button"></i>
+    </form>
+  </nav>
+  <h1></h1>
+  <nav id="dropdowns">
+    <div class="dropdown-ingredients">
+      <button type="button" class="btn btn-primary dropdown-toggle ingredients-button" data-toggle="dropdown">
+        Ingredients
+      </button>
+      <div class="dropdown-menu ingredients-list">
       </div>
-      <div class="dropdown-appliance">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-          Appareils
-        </button>
-        <div class="dropdown-menu appliance-list">
-        </div>
+    </div>
+    <div class="dropdown-appliance">
+      <button type="button" class="btn btn-primary dropdown-toggle appliances-button" data-toggle="dropdown">
+        Appareils
+      </button>
+      <div class="dropdown-menu appliance-list">
       </div>
-      <div class="dropdown-ustensils">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-          Ustensiles
-        </button>
-        <div class="dropdown-menu ustensils-list">
-        </div>
+    </div>
+    <div class="dropdown-ustensils">
+      <button type="button" class="btn btn-primary dropdown-toggle ustensils-button" data-toggle="dropdown">
+        Ustensiles
+      </button>
+      <div class="dropdown-menu ustensils-list">
       </div>
-    </nav>
-    <section id="recipes-list">
-    </section>
+    </div>
+  </nav>
+  <section id="recipes-list"></section>
 
-
-    <script src="js/class/Ingredient.js"></script>
-    <script src="js/class/Recipe.js"></script>
-    <script src="js/dropdown/Ingredients.js"></script>
-    <script src="js/dropdown/Appliance.js"></script>
-    <script src="js/dropdown/Ustensils.js"></script>
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/class/Ingredient.js"></script>
+  <script src="js/class/Recipe.js"></script>
+  <script src="js/dropdown/Ingredients.js"></script>
+  <script src="js/dropdown/Appliance.js"></script>
+  <script src="js/dropdown/Ustensils.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

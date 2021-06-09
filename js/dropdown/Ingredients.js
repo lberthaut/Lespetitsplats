@@ -6,6 +6,4 @@ class Ingredients{
     show(){
         return `<a class="dropdown-item" href="#">${this.ingredient}</a>`
     }
-
-
 }
