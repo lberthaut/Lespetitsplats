@@ -161,3 +161,7 @@ aside p{
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
+.ingredient p:nth-child(1){
+    font-weight: bold;
+}

@@ -6,13 +6,13 @@ class Ingredient{
         if(this.unit == undefined){
             this.unit = '';
         };
-        /* if(this.quantity == undefined){
-            document.querySelectorAll('.quantity').style.display= 'none';
-        }; */
+        if(this.quantity == undefined){
+            this.quantity = '';
+        };
         var unit = this.unit;
         var unitSplit = unit.split(' ')
-        return `<div class="ingredient"><p>${this.ingredient}</p>
-          <p class="quantity">: ${this.quantity} ${unitSplit[0]}</p></div>`;
+        return `<div class="ingredient"><p>${this.ingredient}&nbsp;</p>
+          <p class="quantity">${this.quantity} ${unitSplit[0]}</p></div>`;
     }
 }
 
