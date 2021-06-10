@@ -1,8 +1,6 @@
 $searchbarcolor: #E7E7E7;
 $backgroundimage: #C7BEBE;
 $backgrounddatas: #E7E7E7;
-$backgrounddropdownappareils: #68D9A4;
-$backgrounddropdownustensils: #ED6454;
 
 
 
@@ -42,33 +40,6 @@ header{
     font-size: 32px;
     border-radius: 0px 5px 5px 0px;
     padding-right: 20px;
-}
-
-#dropdowns{
-    width: 35%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-
-.appliances-button{
-    background-color: $backgrounddropdownappareils;
-    border-color: $backgrounddropdownappareils;
-    &:hover{
-        background-color: $backgrounddropdownappareils;
-        border-color: $backgrounddropdownappareils;
-    }
-}
-
-.ustensils-button{
-    background-color: $backgrounddropdownustensils;
-    border: $backgrounddropdownustensils;
-    &:hover{
-        background-color: $backgrounddropdownustensils;
-        border-color: $backgrounddropdownustensils;
-    }
 }
 
 #recipes-list{

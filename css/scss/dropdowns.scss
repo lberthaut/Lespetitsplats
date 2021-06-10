@@ -1,0 +1,64 @@
+$backgrounddropdowningredients: #3282F7;
+$backgrounddropdownappliance: #68D9A4;
+$backgrounddropdownustensils: #ED6454;
+
+#dropdowns{
+    width: 35%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.ingredients-button{
+    background-color: $backgrounddropdowningredients;
+    border: none;
+    &:hover{
+        background-color: $backgrounddropdowningredients;
+    }
+}
+
+.ingredients-list, .ingredients-list>a:hover{
+    background-color: $backgrounddropdowningredients;
+}
+
+.ingredients-button:not(:disabled):not(.disabled).active, .show>.ingredients-button.dropdown-toggle{
+    background-color: $backgrounddropdowningredients;
+}
+
+.appliances-button{
+    background-color: $backgrounddropdownappliance;
+    border: none;
+    &:hover{
+        background-color: $backgrounddropdownappliance;
+    }
+}
+
+.appliances-list, .appliances-list>a:hover{
+    background-color: $backgrounddropdownappliance;
+}
+
+.appliances-button:not(:disabled):not(.disabled).active, .show>.appliances-button.dropdown-toggle{
+    background-color: $backgrounddropdownappliance;
+}
+
+.ustensils-button{
+    background-color: $backgrounddropdownustensils;
+    border: none;
+    &:hover{
+        background-color: $backgrounddropdownustensils;
+    }
+}
+
+.ustensils-list, .ustensils-list>a:hover{
+    background-color: $backgrounddropdownustensils;
+}
+
+.ustensils-button:not(:disabled):not(.disabled).active, .show>.ustensils-button.dropdown-toggle{
+    background-color: $backgrounddropdownustensils;
+}
+
+.ingredients-list>a, .appliances-list>a, .ustensils-list>a{
+    color: white;
+}
