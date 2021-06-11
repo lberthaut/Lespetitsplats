@@ -567,7 +567,7 @@ let recipes = [
                 "unit":"tiges"
             },
             {
-                "ingredient": "Huile d'Olives",
+                "ingredient": "Huile d'Olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -906,7 +906,7 @@ let recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'Olives"
+                "ingredient": "Huile d'Olive"
             },
             {
                 "ingredient": "Oignon",
@@ -1279,7 +1279,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Huile d'Olives",
+                "ingredient": "Huile d'Olive",
                 "quantity": 25,
                 "unit": "cl"
             },

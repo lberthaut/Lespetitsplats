@@ -13,13 +13,11 @@ for(let recipe of recipes){
       let ingredientValue = Object.values(ingredient);
       var insertIngredients = ingredientsArray.push(ingredientValue[0]);
       var ingredientsArrayCleaned = [...new Set(ingredientsArray)];
-      
     }
 }
 for(let i=0; i<ingredientsArrayCleaned.length; i++){
-  ingredientsDropdown.innerHTML += `<a class="dropdown-item" href="#">${ingredientsArrayCleaned[i]}</a>`;
+  ingredientsDropdown.innerHTML += `<a class="dropdown-item" href="#" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</a>`;
 }
-
 
 
 /*Affichage du dropdown Appareils*/
@@ -31,19 +29,19 @@ for(let recipe of recipes){
     var appliancesArrayCleaned = [...new Set(appliancesArray)];
 }
 for(let i=0; i<appliancesArrayCleaned.length; i++){
-  applianceDropdown.innerHTML += `<a class="dropdown-item" href="#">${appliancesArrayCleaned[i]}</a>`
+  applianceDropdown.innerHTML += `<a class="dropdown-item" href="#" alt="${appliancesArrayCleaned[i]}">${appliancesArrayCleaned[i]}</a>`
 }
+
 
 /*Affichage du dropdown Ustensiles*/
 var ustensilsDropdown = document.querySelector('.ustensils-list');
 var ustensilsArray = [];
 for(let recipe of recipes){
     for(let ustensils of recipe.ustensils){
-      let ustensilsValue = Object.values(ustensils);
-      var insertUstensils = ustensilsArray.push(ustensilsValue);
+      var insertUstensils = ustensilsArray.push(ustensils);
       var ustensilsArrayCleaned = [...new Set(ustensilsArray)];
     }
 }
 for(let i=0; i<appliancesArrayCleaned.length; i++){
-  ustensilsDropdown.innerHTML += `<a class="dropdown-item" href="#">${ustensilsArrayCleaned[i]}</a>`
+  ustensilsDropdown.innerHTML += `<a class="dropdown-item" href="#" alt="${ustensilsArrayCleaned[i]}">${ustensilsArrayCleaned[i]}</a>`
 }

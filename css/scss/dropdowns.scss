@@ -7,8 +7,17 @@ $backgrounddropdownustensils: #ED6454;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 25px;
+}
+
+.dropdown-item{
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .ingredients-button{
@@ -19,19 +28,12 @@ $backgrounddropdownustensils: #ED6454;
     }
 }
 
-.dropdown-item{
-    width: 220px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
 .ingredients-list.show{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 660px;
-    height: 1500px
+    height: 1300px
 }
 
 .ingredients-list, .ingredients-list>a:hover{
@@ -50,6 +52,13 @@ $backgrounddropdownustensils: #ED6454;
     }
 }
 
+.appliances-list.show{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 220px;
+}
+
 .appliances-list, .appliances-list>a:hover{
     background-color: $backgrounddropdownappliance;
 }
@@ -64,6 +73,13 @@ $backgrounddropdownustensils: #ED6454;
     &:hover{
         background-color: $backgrounddropdownustensils;
     }
+}
+
+.ustensils-list.show{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 220px;
 }
 
 .ustensils-list, .ustensils-list>a:hover{
