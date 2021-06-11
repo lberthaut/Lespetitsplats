@@ -19,6 +19,21 @@ $backgrounddropdownustensils: #ED6454;
     }
 }
 
+.dropdown-item{
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ingredients-list.show{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 660px;
+    height: 1500px
+}
+
 .ingredients-list, .ingredients-list>a:hover{
     background-color: $backgrounddropdowningredients;
 }

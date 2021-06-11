@@ -12,10 +12,12 @@
 </head>
 
 <body>
+<!-- Bannière -->
   <header>
     <img src="https://user.oc-static.com/upload/2020/08/14/15973932905401_logo%20%281%29.png" id="logo"
       alt="Logo de l'entreprise Les Petits Plats" />
   </header>
+<!-- Barre de Recherche -->  
   <nav>
     <form class="search-barr-button">
       <input type="text" name="searchbarr" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette"
@@ -24,7 +26,9 @@
     </form>
   </nav>
   <h1></h1>
+<!-- Dropdowns -->
   <nav id="dropdowns">
+<!-- Dropdowns ingredients -->
     <div class="dropdown-ingredients">
       <button type="button" class="btn btn-primary dropdown-toggle ingredients-button" data-toggle="dropdown">
         Ingredients
@@ -32,6 +36,7 @@
       <div class="dropdown-menu ingredients-list">
       </div>
     </div>
+<!-- Dropdowns appareils -->
     <div class="dropdown-appliance">
       <button type="button" class="btn btn-primary dropdown-toggle appliances-button" data-toggle="dropdown">
         Appareils
@@ -39,6 +44,7 @@
       <div class="dropdown-menu appliances-list">
       </div>
     </div>
+<!-- Dropdowns ustensiles -->
     <div class="dropdown-ustensils">
       <button type="button" class="btn btn-primary dropdown-toggle ustensils-button" data-toggle="dropdown">
         Ustensiles
@@ -47,7 +53,9 @@
       </div>
     </div>
   </nav>
-  <section id="recipes-list"></section>
+<!-- Liste des recettes -->
+  <section id="recipes-list">
+  </section>
 
   <script src="js/class/Ingredient.js"></script>
   <script src="js/class/Recipe.js"></script>

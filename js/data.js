@@ -5,16 +5,16 @@ let recipes = [
         "servings" : 1,
         "ingredients": [
             {
-                "ingredient" : "Lait de coco",
+                "ingredient" : "Lait de Coco",
                 "quantity" : 400,
                 "unit" : "ml"
             },
             {
-                "ingredient" : "Jus de citron",
+                "ingredient" : "Jus de Citron",
                 "quantity" : 2
             },
             {
-                "ingredient" : "Crème de coco",
+                "ingredient" : "Crème de Coco",
                 "quantity" : 2,
                 "unit" : "cuillères à soupe"
             },
@@ -34,7 +34,7 @@ let recipes = [
     },
     {
         "id": 2,
-        "name" : "Poisson Cru à la tahitienne",
+        "name" : "Poisson Cru à la Tahitienne",
         "servings": 2,
         "ingredients": [
             {
@@ -70,7 +70,7 @@ let recipes = [
         "ustensils": ["presse citron"]
     },{
         "id": 3,
-        "name": "Poulet coco réunionnais",
+        "name": "Poulet Coco Réunionnais",
         "servings": 4,
         "ingredients": [
             {
@@ -78,12 +78,12 @@ let recipes = [
                 "quantity" : 1          
             },
             {
-                "ingredient": "Lait de coco",
+                "ingredient": "Lait de Coco",
                 "quantity" : 400,
                 "unit" : "ml"
             },
             {
-                "ingredient": "Coulis de tomate",
+                "ingredient": "Coulis de Tomate",
                 "quantity" : 25,
                 "unit" : "cl"
             },
@@ -92,11 +92,11 @@ let recipes = [
                 "quantity" : 1
             },
             {
-                "ingredient": "Poivron rouge",
+                "ingredient": "Poivron Rouge",
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'Olive"
             }
         ],
         "time": 80,
@@ -105,16 +105,16 @@ let recipes = [
         "ustensils": ["couteau"]
     },{
         "id": 4,
-        "name": "Salade de riz",
+        "name": "Salade de Riz",
         "servings": 4,
         "ingredients":[
             {
-                "ingredient": "Riz blanc",
+                "ingredient": "Riz Blanc",
                 "quantity": 500,
                 "unit": "gr"
             },
             {
-                "ingredient": "Thon en miettes",
+                "ingredient": "Thon en Miettes",
                 "quantity": 200,
                 "unit": "gr"
             },{
@@ -122,7 +122,7 @@ let recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Oeuf dur",
+                "ingredient": "Oeuf Dur",
                 "quantity": 2
             },
             {
@@ -143,15 +143,15 @@ let recipes = [
     },
     {
         "id": 5,
-        "name": "Tarte au thon",
+        "name": "Tarte au Thon",
         "servings": 4,
         "ingredients":[
            {
-               "ingredient": "Pâte feuilletée",
+               "ingredient": "Pâte Feuilletée",
                "quantity": 1 
            },
            {
-               "ingredient": "Thon en miettes",
+               "ingredient": "Thon en Miettes",
                "quantity": 130,
                "unit": "gr"
            },
@@ -160,12 +160,12 @@ let recipes = [
                 "quantity": 2
            },
            {
-               "ingredient": "Crème fraiche",
+               "ingredient": "Crème Fraiche",
                "quantity": 2,
                "unit": "cuillères à soupe"
            },
            {
-               "ingredient": "gruyère râpé",
+               "ingredient": "Gruyère Râpé",
                "quantity": 100,
                "unit": "gr"
            },
@@ -182,11 +182,11 @@ let recipes = [
     },
     {
         "id": 6,
-        "name": "Tarte aux pommes",
+        "name": "Tarte aux Pommes",
         "servings": 6,
         "ingredients":[
             {
-                "ingredient": "Pâte brisée",
+                "ingredient": "Pâte Brisée",
                 "quantity": 1
             },
             {
@@ -198,7 +198,7 @@ let recipes = [
                 "quantity": "2"
             },
             {
-                "ingredient":"Crème fraiche",
+                "ingredient":"Crème Fraiche",
                 "quantity":25,
                 "unit": "cl"
             },
@@ -208,7 +208,7 @@ let recipes = [
                 "unit":"gr"
             },
             {
-                "ingredient": "Sucre vanillé",
+                "ingredient": "Sucre Vanillé",
                 "quantity": 1,
                 "unit": "sachets"
 
@@ -220,20 +220,20 @@ let recipes = [
         "ustensils": ["moule à tarte", "saladier", "fourchette"]
     },{
         "id": 7,
-        "name": "Tartelettes au chocolat et aux fraises",
+        "name": "Tartelettes au Chocolat et aux Fraises",
         "servings": 6,
         "ingredients":[
             {
-                "ingredient": "Pâte sablée",
+                "ingredient": "Pâte Sablée",
                 "quantity": 1
             }, 
             {
-                "ingredient": "Chocolat au lait",
+                "ingredient": "Chocolat au Lait",
                 "quantity": 300,
                 "unit": "gr"
             },
             {
-                "ingredient": "Crème liquide",
+                "ingredient": "Crème Liquide",
                 "quantity": 80,
                 "unit": "cl"
             },
@@ -250,7 +250,7 @@ let recipes = [
         "time": 50,
         "description": "Etaler la pate dans les moules à tartelette. Faire cuire la pate 30 minutes. Découper le chocolat en morceau et le faire chauffer, y ajouter la crême liquide, ajouter le beurre et remuer jusqu'à avoir une pâte homogène. Verser la pate sur les tartelettes. Couper les fraises en 2 et les positionner sur ",
         "appliance":"Four",
-        "ustensils":["moule à tartelettes (6)", "casserole"]
+        "ustensils":["moule à tartelettes (6)", "Casserole"]
     }, {
         "id": 8,
         "name": "Brownie",
@@ -262,7 +262,7 @@ let recipes = [
                 "unit": "gr"
            },
            {
-               "ingredient": "Chocolat noir",
+               "ingredient": "Chocolat Noir",
                "quantity": 150,
                "unit": "gr"
            },
@@ -281,7 +281,7 @@ let recipes = [
                "unit": "gr"
            },
            {
-                "ingredient": "farine",
+                "ingredient": "Farine",
                 "quantity": 90,
                 "unit": "gr"
            }
@@ -290,11 +290,11 @@ let recipes = [
         "time": 60,
         "description": "Hachez les noix grossièrement. Faire fondre le chocolat avec le beurre. Mélanger les oeuf et le sucre et mélanger au chocolat. Ajouter la farine. Mélanger afin d'avoir quelque chose d'homogène puis incorporer les noix. Verser la préparation dans un moule de préférence rectangulaire. Cuire 2O à 25 minutes à 180°. Sortez du four et attendez quelques minutes pour démouler. Servir avec une boule de glace pour plus de gourmandise.",
         "appliance": "Four",
-        "ustensils": ["moule à gateaux", "casserole"]
+        "ustensils": ["moule à gateaux", "Casserole"]
     },
     {
         "id": 9,
-        "name": "Salade Méditerannéene fraiche au chèvre",
+        "name": "Salade Méditerannéene Fraiche au Chèvre",
         "servings": 4,
         "ingredients":[
             {
@@ -305,7 +305,7 @@ let recipes = [
                 "ingredient": "Olives"
             },
             {
-                "ingredient": "Fromage de chèvre",
+                "ingredient": "Fromage de Chèvre",
                 "quantity": 150,
                 "unit": "gr"
             },
@@ -313,7 +313,7 @@ let recipes = [
                 "ingredient": "Vinaigre Balsamic"
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'Olive"
             }, 
             {
                 "ingredient": "Basilic"    
@@ -330,16 +330,16 @@ let recipes = [
         "servings": 4,
         "ingredients":[
             {
-                "ingredient": "Roblochon",
+                "ingredient": "Reblochon",
                 "quantity": "1"
             },
             {
-                "ingredient": "Pommes de terre",
+                "ingredient": "Pommes de Terre",
                 "quantity": 4.5,
                 "unit": "kg"
             },
             {
-                "ingredient": "Jambon fumé",
+                "ingredient": "Jambon Fumé",
                 "quantity": 2,
                 "unit": "tranches"
             },
@@ -349,7 +349,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Vin blanc sec",
+                "ingredient": "Vin Blanc Sec",
                 "quantity": 30,
                 "unit": "cl"
             }
@@ -357,14 +357,14 @@ let recipes = [
         "time": 60,
         "description": "Commencer par cuire les pommes de terre dans l'eau bouillante. Puis epluchez les et coupez les en rondelles. Emincer les oignons puis les faire dorer dans du beurre. Ajouter le jambon fumé coupé en en morceaux ainsi que les pommes de terres. Salez, poivrez à votre gout ( et celui de vos convives ) Laissez cuisiner durant environ 10 minutes puis ajouter le vin blanc. Après 5 minutes, mettre le tout dans un plat à gratin. Coupez le rebelochon, soit en tranches, soit le couper en 2 dans le sens de l'épaisseur et recouvrir les pommes de terre. Cuire au four (environ 220°) durant 25 minutes. C'est prêt !",
         "appliance":"Four",
-        "ustensils": ["plat à gratin", "couteau","Économe"]
+        "ustensils": ["plat à gratin", "couteau","économe"]
     },{
         "id": 11,
-        "name": "Salade tomate, mozzarella et pommes",
+        "name": "Salade Tomate, Mozzarella et Pommes",
         "servings": 4,
         "ingredients":[
             {
-                "ingredient": "Tomates cerises",
+                "ingredient": "Tomates Cerises",
                 "quantity": 250,
                 "unit": "gr"
             },
@@ -374,7 +374,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Jambon de parme",
+                "ingredient": "Jambon de Parme",
                 "quantity": 4,
                 "unit": "tranches"
             }, 
@@ -398,7 +398,7 @@ let recipes = [
         "ustensils": ["couteau", "cuillère à melon" ]
     },{
         "id": 12,
-        "name": "Compote pomme rhubarbe",
+        "name": "Compote Pomme Rhubarbe",
         "servings": 4,
         "ingredients":[
             {
@@ -411,7 +411,7 @@ let recipes = [
                 "quantity": 8
             },
             {
-                "ingredient": "Sucre vanillé",
+                "ingredient": "Sucre Vanillé",
                 "quantity": 6,
                 "unit": "sachets"
             },
@@ -422,13 +422,13 @@ let recipes = [
             }
         ],
         "time": 40,
-        "description": "Éplucher les fruits et les couper en morceaux, les mettre dans une casserole en ajoutant l'eau et le sucre vanillé. Laisser cuire 15 minutes en remuant régulièrement.",
+        "description": "Éplucher les fruits et les couper en morceaux, les mettre dans une Casserole en ajoutant l'eau et le sucre vanillé. Laisser cuire 15 minutes en remuant régulièrement.",
         "appliance": "Casserole",
         "ustensils": ["couteau", "économe"]
     },
     {
         "id": 13,
-        "name": "Salade mâchée de patates",
+        "name": "Salade Mâchée de Patates",
         "servings": 2,
         "ingredients": [
             {
@@ -437,7 +437,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Pommes de terre",
+                "ingredient": "Pommes de Terre",
                 "quantity": 200,
                 "unit": "gr"
             },
@@ -447,12 +447,12 @@ let recipes = [
 
             },
             {
-                "ingredient": "Vinaigre de cidre",
+                "ingredient": "Vinaigre de Cidre",
                 "quantity": 1,
                 "unit":"cuillère à soupe"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "huile d'Olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -464,15 +464,15 @@ let recipes = [
     },
     {
         "id": 14,
-        "name": "Galette Bretonne Saucisse et Fromage à raclette",
+        "name": "Galette Bretonne Saucisse et Fromage à Raclette",
         "servings": 2,
         "ingredients": [
             {
-                "ingredient": "Saucisse bretonne ou de toulouse",
+                "ingredient": "Saucisse Bretonne ou de Toulouse",
                 "quantity": 2
             },
             {
-                "ingredient": "Farine de blé noir",
+                "ingredient": "Farine de Blé Noir",
                 "quantity": 130,
                 "unit": "gr"
             },
@@ -482,7 +482,7 @@ let recipes = [
 
             },
             {
-                "ingredient": "Fromage à raclette",
+                "ingredient": "Fromage à Raclette",
                 "quantity": 300,
                 "unit":"gr"
             },
@@ -522,12 +522,12 @@ let recipes = [
                 "unit": "ml"
             },
             {
-                "ingredient": "Beurre salé",
+                "ingredient": "Beurre Salé",
                 "quantity": 30,
                 "unit":"gr"
             },
             {
-                "ingredient": "Chocolat au lait",
+                "ingredient": "Chocolat au Lait",
                 "quantity": 100,
                 "unit": "gr"
             },
@@ -543,7 +543,7 @@ let recipes = [
     },
     {
         "id": 16,
-        "name": "Gratin de pâtes à la tomate",
+        "name": "Gratin de Pâtes à la Tomate",
         "servings": 2,
         "ingredients": [
             {
@@ -567,7 +567,7 @@ let recipes = [
                 "unit":"tiges"
             },
             {
-                "ingredient": "huile d'olives",
+                "ingredient": "Huile d'Olives",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
@@ -579,7 +579,7 @@ let recipes = [
     },
     {
         "id": 17,
-        "name": "Smoothie à la fraise",
+        "name": "Smoothie à la Fraise",
         "servings": 6,
         "ingredients": [
             {
@@ -611,7 +611,7 @@ let recipes = [
     },
     {
         "id": 18,
-        "name": "Smoothie ananas et vanille",
+        "name": "Smoothie Ananas et Vanille",
         "servings": 5,
         "ingredients": [
             {
@@ -619,7 +619,7 @@ let recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Glace à la vanille",
+                "ingredient": "Glace à la Vanille",
                 "quantity": 500,
                 "unit": "ml"
             },
@@ -653,7 +653,7 @@ let recipes = [
                 "unit": "litres"
             },
             {
-                "ingredient": "Sucre glace",
+                "ingredient": "Sucre Glace",
                 "quantity": 30,
                 "unit":"gr"
             },
@@ -683,7 +683,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Crème fraiche",
+                "ingredient": "Crème Fraiche",
                 "quantity": 200,
                 "unit": "gr"
             },
@@ -693,7 +693,7 @@ let recipes = [
                 "unit":"gr"
             },
             {
-                "ingredient": "huile d'olive",
+                "ingredient": "Huile d'Olive",
                 "quantity": 1,
                 "unit": "cuillères à soupe"
             }
@@ -705,7 +705,7 @@ let recipes = [
     },
     {
         "id": 21,
-        "name": "Spaghettis à la bolognaise",
+        "name": "Spaghettis à la Bolognaise",
         "servings": 4,
         "ingredients": [
             {
@@ -718,17 +718,17 @@ let recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Coulis de tomate",
+                "ingredient": "Coulis de Tomate",
                 "quantity": 300,
                 "unit":"gr"
             },
             {
-                "ingredient": "Viande hachée 1% de matière grasse",
+                "ingredient": "Viande Hachée 1% de Matière Grasse",
                 "quantity": 400,
                 "unit":"gr"
             },
             {
-                "ingredient": "Vin rouge",
+                "ingredient": "Vin Rouge",
                 "quantity": 20,
                 "unit": "cl"
             },
@@ -740,12 +740,12 @@ let recipes = [
         ],
         "time": 30,
         "description":"Cuisiner la viande hachée dans une poelle à frire. Dans une autre faire cuire les oignons découpés en fins dés avec un peu de beurre. Ajouter du vin rouge. Mélanger les oigons avec la viande hachée. Faire cuire les pates le temps indiqué sur le paquet. Ajouter le coulis de tomates à la viande hachée. Une fois que les pates sont cuites, ajouter la crème fraiche à la viande hachée. Serivir.",
-        "appliance": "casserole.",
+        "appliance": "Casserole",
         "ustensils":["Cuillère en bois", "louche", "couteau"]
     },
     {
         "id": 22,
-        "name": "Fondant au chocolat",
+        "name": "Fondant au Chocolat",
         "servings": 4,
         "ingredients": [
             {
@@ -754,7 +754,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Chocolat noir",
+                "ingredient": "Chocolat Noir",
                 "quantity": 200,
                 "unit": "gr"
             },
@@ -776,15 +776,15 @@ let recipes = [
         "time": 30,
         "description":"Faire fondre le chocolat et le beurre au bain marie. Dans un saladier battre les oeufs avec le sucre jusqu'à obtenir une texture de type mousse. Ajouter la farine ainsi que le mélange de beurre et chocolat fondu. Beurrez le moule à gateaux. Mettre au four préchauffé à 200° puis faites chauffer pendant 15 minutes. C'est prêt. Servir avec une boule de glace ou une crême dessert.",
         "appliance": "Four",
-        "ustensils":["moule à gateaux", "fouet", "casserole"]
+        "ustensils":["moule à gateaux", "fouet", "Casserole"]
     },
     {
         "id": 23,
-        "name": "Quiche lorraine",
+        "name": "Quiche Lorraine",
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Pâte brisée",
+                "ingredient": "Pâte Brisée",
                 "quantity": 200,
                 "unit": "gr"
             },
@@ -820,11 +820,11 @@ let recipes = [
     },
     {
         "id": 24,
-        "name": "Salade de pâtes",
+        "name": "Salade de Pâtes",
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Thon en miettes",
+                "ingredient": "Thon en Miettes",
                 "quantity": 160,
                 "unit": "gr"
             },
@@ -878,7 +878,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Chocolat noir en pepites",
+                "ingredient": "Chocolat Noir en Pépites",
                 "quantity": 100,
                 "unit":"gr"
             },
@@ -894,7 +894,7 @@ let recipes = [
     },
     {
         "id": 26,
-        "name": "Soupe de tomates",
+        "name": "Soupe de Tomates",
         "servings": 2,
         "ingredients": [
             {
@@ -902,11 +902,11 @@ let recipes = [
                 "quantity": 6
             },
             {
-                "ingredient": "Pommes de terre",
+                "ingredient": "Pommes de Terre",
                 "quantity": 1
             },
             {
-                "ingredient": "Huile d'olives"
+                "ingredient": "Huile d'Olives"
             },
             {
                 "ingredient": "Oignon",
@@ -925,7 +925,7 @@ let recipes = [
     },
     {
         "id": 27,
-        "name": "Soupe à l'oseille",
+        "name": "Soupe à l'Oseille",
         "servings": 4,
         "ingredients": [
             {
@@ -937,7 +937,7 @@ let recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Crème fraîche",
+                "ingredient": "Crème Fraîche",
                 "quantity": 4,
                 "unit": "cuillère à soupe"
             },
@@ -947,19 +947,19 @@ let recipes = [
                 "unit":"verres"
             },
             {
-                "ingredient": "Beurre salé",
+                "ingredient": "Beurre Salé",
                 "quantity": 50,
                 "unit": "gr"
             }
         ],
         "time": 15,
         "description":"Faire fondre l'oseille avec du beurre demi sel, ajouter un litre d'eau. Ajouter les vermicelles. Laisser cuire. une foit prêt, sortir du feu et après 5 minutes ajouter le jaune d'oeuf et la crême fraîche",
-        "appliance": "casserole",
+        "appliance": "Casserole",
         "ustensils":["couteau","cuillère en bois"]
     },
     {
         "id": 28,
-        "name": "Soupe de poireaux",
+        "name": "Soupe de Poireaux",
         "servings": 4,
         "ingredients": [
             {
@@ -967,7 +967,7 @@ let recipes = [
                 "quantity": 3
             },
             {
-                "ingredient": "Pommes de terre",
+                "ingredient": "Pommes de Terre",
                 "quantity": 400,
                 "unit": "gr"
             },
@@ -982,7 +982,7 @@ let recipes = [
                 "unit":"gr"
             },
             {
-                "ingredient": "Crême fraîche",
+                "ingredient": "Crême Fraîche",
                 "quantity": 10,
                 "unit": "cl"
             }
@@ -990,7 +990,7 @@ let recipes = [
         "time": 80,
         "description":"Emincer les blanc de poireaux et les faire chauffer dans 25 gr de beurre. AJouter les pommes de terres coupées en morceaux. Ajouter l'eau et laisser mijoter pour 45 minutes. Chauffer l'oseille avec le beurre restant puis incorporer le tout. Mixez. Ajoutez la crème. Bon appetit.",
         "appliance": "Mixer",
-        "ustensils":["casserole","couteau"]
+        "ustensils":["Casserole","couteau"]
     },
     {
         "id": 29,
@@ -998,7 +998,7 @@ let recipes = [
         "servings": 2,
         "ingredients": [
             {
-                "ingredient": "Pois chiches",
+                "ingredient": "Pois Chiches",
                 "quantity": 1,
                 "unit": "boites"
             },
@@ -1012,7 +1012,7 @@ let recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'Olive"
             },
             {
                 "ingredient": "Paprika"
@@ -1025,7 +1025,7 @@ let recipes = [
     },
     {
         "id": 30,
-        "name": "Purée de pois cassés",
+        "name": "Purée de Pois Cassés",
         "servings": 4,
         "ingredients": [
             {
@@ -1050,7 +1050,7 @@ let recipes = [
     },
     {
         "id": 31,
-        "name": "Jardinière de légumes",
+        "name": "Jardinière de Légumes",
         "servings": 4,
         "ingredients": [
             {
@@ -1058,16 +1058,16 @@ let recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Pommes de terre",
+                "ingredient": "Pommes de Terre",
                 "quantity": 2
             },
             {
-                "ingredient": "Haricots verts",
+                "ingredient": "Haricots Verts",
                 "quantity": 150,
                 "unit": "gr"
             },
             {
-                "ingredient": "Petits poids",
+                "ingredient": "Petits Pois",
                 "quantity": 100,
                 "unit":"gr"
             },
@@ -1084,16 +1084,16 @@ let recipes = [
     },
     {
         "id": 32,
-        "name": "Croque Monsieur à la dinde",
+        "name": "Croque Monsieur à la Dinde",
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Pain de mie",
+                "ingredient": "Pain de Mie",
                 "quantity": 8,
                 "unit": "tranches"
             },
             {
-                "ingredient": "Blanc de dinde",
+                "ingredient": "Blanc de Dinde",
                 "quantity": 4,
                 "unit": "tranches"
             },
@@ -1113,7 +1113,7 @@ let recipes = [
                 "unit": "cl"
             },
             {
-                "ingredient": "Noix de muscade",
+                "ingredient": "Noix de Muscade",
                 "quantity": 1,
                 "unit": "pincées"
             }
@@ -1125,11 +1125,11 @@ let recipes = [
     },
     {
         "id": 33,
-        "name": "Sandwich au saumon fumé",
+        "name": "Sandwich au Saumon Fumé",
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Pain de mie",
+                "ingredient": "Pain de Mie",
                 "quantity": 8,
                 "unit": "tranches"
             },
@@ -1139,16 +1139,16 @@ let recipes = [
                 "unit": "tranches"
             },
             {
-                "ingredient": "Feuilles de laitue",
+                "ingredient": "Feuilles de Laitue",
                 "quantity": 4
             },
             {
-                "ingredient": "Fromage blanc",
+                "ingredient": "Fromage Blanc",
                 "quantity": 4,
                 "unit":"cuillères à soupe"
             },
             {
-                "ingredient": "Jus de citron",
+                "ingredient": "Jus de Citron",
                 "quantity": 1,
                 "unit": "cuillères à soupe"
             }
@@ -1160,21 +1160,21 @@ let recipes = [
     },
     {
         "id": 34,
-        "name": "Purée de patate douce",
+        "name": "Purée de Patate Douce",
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Patate douce",
+                "ingredient": "Patate Douce",
                 "quantity": 800,
                 "unit": "gr"
             },
             {
-                "ingredient": "Crème fraîche",
+                "ingredient": "Crème Fraîche",
                 "quantity": 20,
                 "unit": "cl"
             },
             {
-                "ingredient": "Huile d'olive"
+                "ingredient": "Huile d'Olive"
             },
             {
                 "ingredient": "Orange",
@@ -1182,13 +1182,13 @@ let recipes = [
             }
         ],
         "time": 25,
-        "description":"Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
+        "description":"Eplucher les patates douces et coupez les en morceaux. Les faire cuire durant 20 minute dans une Casserole d'eau bouillante. Passer au mixer en ajoutant la crème et l'huile d'olive à son gout. Salez, poivrez. Pressez l'orange et ajouter le jus à l'ensemble. Servir.",
         "appliance": "Mixer",
         "ustensils":["couteau", "économe", "cuillère en bois"]
     },
     {
         "id": 35,
-        "name": "Purée de carottes",
+        "name": "Purée de Carottes",
         "servings": 2,
         "ingredients": [
             {
@@ -1196,7 +1196,7 @@ let recipes = [
                 "quantity": 6
             },
             {
-                "ingredient": "Pommes de terre",
+                "ingredient": "Pommes de Terre",
                 "quantity": 1
             },
             {
@@ -1205,7 +1205,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Crème fraîche",
+                "ingredient": "Crème Fraîche",
                 "quantity": 2,
                 "unit":"cuillères à soupe"
             },
@@ -1215,7 +1215,7 @@ let recipes = [
                 "unit": "cuillères à café"
             },
             {
-                "ingredient": "Noix de muscade",
+                "ingredient": "Noix de Muscade",
                 "quantity": 1,
                 "unit": "pincées"
             }
@@ -1235,7 +1235,7 @@ let recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Fromage de chèvre",
+                "ingredient": "Fromage de Chèvre",
                 "quantity": 4
             },
             {
@@ -1266,7 +1266,7 @@ let recipes = [
     },
     {
         "id": 37,
-        "name": "Courgettes farcies au boeuf",
+        "name": "Courgettes Farcies au Boeuf",
         "servings": 2,
         "ingredients": [
             {
@@ -1274,12 +1274,12 @@ let recipes = [
                 "quantity": 2
             },
             {
-                "ingredient": "Viande hachée",
+                "ingredient": "Viande Hachée",
                 "quantity": 600,
                 "unit": "gr"
             },
             {
-                "ingredient": "Huile d'olives",
+                "ingredient": "Huile d'Olives",
                 "quantity": 25,
                 "unit": "cl"
             },
@@ -1288,7 +1288,7 @@ let recipes = [
                 "quantity": 1
             },
             {
-                "ingredient": "Coulis de tomates",
+                "ingredient": "Coulis de Tomates",
                 "quantity": 20,
                 "unit": "cl"
             },
@@ -1324,7 +1324,7 @@ let recipes = [
                 "quantity": 3
             },
             {
-                "ingredient": "Sucre roux",
+                "ingredient": "Sucre Roux",
                 "quantity": 75,
                 "unit": "gr"
             }
@@ -1336,7 +1336,7 @@ let recipes = [
     },
     {
         "id": 39,
-        "name": "Crumble aux pommes",
+        "name": "Crumble aux Pommes",
         "servings": 40,
         "ingredients": [
             {
@@ -1354,7 +1354,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Sucre roux",
+                "ingredient": "Sucre Roux",
                 "quantity": 80,
                 "unit":"gr"
             }
@@ -1379,7 +1379,7 @@ let recipes = [
                 "quantity": 3
             },
             {
-                "ingredient": "Sucre en poudre",
+                "ingredient": "Sucre en Poudre",
                 "quantity": 4,
                 "unit":"cuillères à café"
             },
@@ -1396,7 +1396,7 @@ let recipes = [
     },
     {
         "id": 41,
-        "name": "Mousse au chocolat",
+        "name": "Mousse au Chocolat",
         "servings": 4,
         "ingredients": [
             {
@@ -1404,24 +1404,24 @@ let recipes = [
                 "quantity": 3
             },
             {
-                "ingredient": "Chocolat noir",
+                "ingredient": "Chocolat Noir",
                 "quantity": 100,
                 "unit": "gr"
             },
             {
-                "ingredient": "Sucre vanillé",
+                "ingredient": "Sucre Vanillé",
                 "quantity": 1,
                 "unit": "sachets"
             }
         ],
         "time": 20,
         "description":"Séparer les blancs d'oeufs. Faire fondre le chocolat au bain marie. Ajouter les jaunes et le sucre au chocolat hors du feu. Battre les blancs en neige. Ajouter les blancs au mélange de chocolat. Mélangez délicatement avec une spatule. Servir dans un plat ou dans des verres. Mettre au frais",
-        "appliance": "casserole",
+        "appliance": "Casserole",
         "ustensils":["fouet", "spatule", "verres"]
     }, 
     {
         "id": 42,
-        "name": "Charlotte au poires",
+        "name": "Charlotte au Poires",
         "servings": 3,
         "ingredients": [
             {
@@ -1434,7 +1434,7 @@ let recipes = [
                 "quantity": 3
             },
             {
-                "ingredient": "Poires au jus",
+                "ingredient": "Poires au Jus",
                 "quantity": 0.5,
                 "unit" : "boites"
             },
@@ -1450,11 +1450,11 @@ let recipes = [
     },
     {
         "id": 43,
-        "name": "Tarte au citron",
+        "name": "Tarte au Citron",
         "servings": 6,
         "ingredients": [
             {
-                "ingredient": "Pâte brisée",
+                "ingredient": "Pâte Brisée",
                 "quantity": 200,
                 "unit": "gr"
             },
@@ -1464,7 +1464,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Beurre fondu",
+                "ingredient": "Beurre Fondu",
                 "quantity": 100,
                 "unit": "gr"
             },
@@ -1483,7 +1483,7 @@ let recipes = [
     }, 
     {
         "id": 44,
-        "name": "Crème déssert au chocolat",
+        "name": "Crème Dessert au Chocolat",
         "servings": 6,
         "ingredients": [
             {
@@ -1507,19 +1507,19 @@ let recipes = [
                 "unit":"gr"
             },
             {
-                "ingredient": "farine",
+                "ingredient": "Farine",
                 "quantity": 40,
                 "unit": "gr"
             }
         ],
         "time": 15,
         "description":"Mélanger la farine et le beurre fondu en ajoutant le lait peu à peu. Ajouter du sucre après la cuisson. Bien mélanger. Ajouter le chocolat en morceaux et laisser chauffer 8 minutes en mélangeant avec une cuillère en bois. Mettre dans des verres",
-        "appliance": "casserole",
+        "appliance": "Casserole",
         "ustensils":["cuillère en bois"]
     },
     {
         "id": 45,
-        "name": "Crème patissière",
+        "name": "Crème Patissière",
         "servings": 8,
         "ingredients": [
             {
@@ -1544,12 +1544,12 @@ let recipes = [
         ],
         "time": 30,
         "description":"Faire bouillir le lait ( on peut y ajouter de l'essence de vanille. Battre les oeufs et le sucre, ajouter la farine puis finalement ajouter le lait chaud. Remettre à feu doux pour faire épaissir en remuant pendant 5 à 10 minutes.",
-        "appliance": "casserole",
+        "appliance": "Casserole",
         "ustensils":["fouet","saladier"]
     },
     {
         "id": 46,
-        "name": "Far breton",
+        "name": "Far Breton",
         "servings": 6,
         "ingredients": [
             {
@@ -1589,7 +1589,7 @@ let recipes = [
     },
     {
         "id": 47,
-        "name": "Mousse au citron",
+        "name": "Mousse au Citron",
         "servings": 6,
         "ingredients": [
             {
@@ -1624,11 +1624,11 @@ let recipes = [
         "servings": 4,
         "ingredients": [
             {
-                "ingredient": "Pâte à pizza",
+                "ingredient": "Pâte à Pizza",
                 "quantity": 1
             },
             {
-                "ingredient": "Tomates pelées",
+                "ingredient": "Tomates Pelées",
                 "quantity": 1,
                 "unit": "boites"
             },
@@ -1638,7 +1638,7 @@ let recipes = [
                 "unit": "barquettes"
             },
             {
-                "ingredient": "Champignons de paris",
+                "ingredient": "Champignons de Paris",
                 "quantity": 1,
                 "unit":"boites"
             },
@@ -1655,7 +1655,7 @@ let recipes = [
     },
     {
         "id": 49,
-        "name": "Smoothie tropical",
+        "name": "Smoothie Tropical",
         "servings": 4,
         "ingredients": [
             {
@@ -1701,7 +1701,7 @@ let recipes = [
                 "quantity": 6
             },
             {
-                "ingredient": "Poudre d'amendes",
+                "ingredient": "Poudre d'amandes",
                 "quantity": 500,
                 "unit": "gr"
             },
@@ -1711,7 +1711,7 @@ let recipes = [
                 "unit": "gr"
             },
             {
-                "ingredient": "Sucre glace",
+                "ingredient": "Sucre Glace",
                 "quantity": 500,
                 "unit":"gr"
             }
