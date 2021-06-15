@@ -11,6 +11,14 @@ $backgrounddropdownustensils: #ED6454;
     margin-top: 65px;
 }
 
+.ingredients-list>p, .appliances-list>p, .ustensils-list>p{
+    color: white;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+/* Dropdown Ingredients */
 .ingredient-item, .appliance-item, .ustensil-item{
     width: 220px;
     overflow: hidden;
@@ -32,12 +40,13 @@ $backgrounddropdownustensils: #ED6454;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 880px;
-    height: 1100px;
-    padding-left: 20px;
+    width: 700px;
+    height: 1500px;
+    padding-left: 15px;
+    padding-bottom: 0;
 }
 
-.ingredients-list, .ingredients-list>a:hover{
+.ingredients-list, .ingredients-list>p:hover{
     background-color: $backgrounddropdowningredients;
 }
 
@@ -45,6 +54,12 @@ $backgrounddropdownustensils: #ED6454;
     background-color: $backgrounddropdowningredients;
 }
 
+.ingredients-button:not(:disabled):not(.disabled).active, .ingredients-button:not(:disabled):not(.disabled):active, .show>.ingredients-button.dropdown-toggle, .ingredients-button.focus, .ingredients-button:focus{
+    background-color: $backgrounddropdowningredients;
+}
+
+
+/* Dropdown Appareils */
 .appliances-button{
     background-color: $backgrounddropdownappliance;
     border: none;
@@ -57,11 +72,11 @@ $backgrounddropdownustensils: #ED6454;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 220px;
+    height: 333px;
     padding-left: 20px;
 }
 
-.appliances-list, .appliances-list>a:hover{
+.appliances-list, .appliances-list>p:hover{
     background-color: $backgrounddropdownappliance;
 }
 
@@ -69,6 +84,12 @@ $backgrounddropdownustensils: #ED6454;
     background-color: $backgrounddropdownappliance;
 }
 
+.appliances-button:not(:disabled):not(.disabled).active, .appliances-button:not(:disabled):not(.disabled):active, .show>.appliances-button.dropdown-toggle, .appliances-button.focus, .appliances-button:focus{
+    background-color: $backgrounddropdownappliance;
+}
+
+
+/* Dropdown Ustensiles */
 .ustensils-button{
     background-color: $backgrounddropdownustensils;
     border: none;
@@ -94,6 +115,6 @@ $backgrounddropdownustensils: #ED6454;
     background-color: $backgrounddropdownustensils;
 }
 
-.ingredients-list>a, .appliances-list>a, .ustensils-list>a{
-    color: white;
+.ustensils-button:not(:disabled):not(.disabled).active, .ustensils-button:not(:disabled):not(.disabled):active, .show>.ustensils-button.dropdown-toggle, .ustensils-button.focus, .ustensils-button:focus{
+    background-color: $backgrounddropdownustensils;
 }
