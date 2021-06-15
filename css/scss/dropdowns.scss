@@ -7,17 +7,17 @@ $backgrounddropdownustensils: #ED6454;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    margin-top: 25px;
+    justify-content: space-between;
+    margin-top: 65px;
 }
 
-.dropdown-item{
+.ingredient-item, .appliance-item, .ustensil-item{
     width: 220px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 28px;
 }
 
 .ingredients-button{
@@ -32,8 +32,9 @@ $backgrounddropdownustensils: #ED6454;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 660px;
-    height: 1300px
+    width: 880px;
+    height: 1100px;
+    padding-left: 20px;
 }
 
 .ingredients-list, .ingredients-list>a:hover{
@@ -57,6 +58,7 @@ $backgrounddropdownustensils: #ED6454;
     flex-direction: column;
     flex-wrap: wrap;
     width: 220px;
+    padding-left: 20px;
 }
 
 .appliances-list, .appliances-list>a:hover{
@@ -79,7 +81,9 @@ $backgrounddropdownustensils: #ED6454;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 220px;
+    width: 660px;
+    height: 360px;
+    padding-left: 20px;
 }
 
 .ustensils-list, .ustensils-list>a:hover{

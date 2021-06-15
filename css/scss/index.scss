@@ -43,6 +43,33 @@ header{
     padding-right: 20px;
 }
 
+.tileries-search{
+    margin-top: 17px;
+}
+
+.tile-search{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.tile-search>p{
+    margin: 0;
+    padding-right: 5px;
+}
+
+.tile-search>i{
+    cursor: pointer;
+}
+
 #recipes-list{
     width: 100%;
     display: flex;
@@ -126,6 +153,9 @@ aside p{
     flex-direction: column;
     flex-wrap: nowrap;
     margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .ingredient{
@@ -136,4 +166,7 @@ aside p{
 
 .ingredient p:nth-child(1){
     font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

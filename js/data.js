@@ -452,7 +452,7 @@ let recipes = [
                 "unit":"cuillère à soupe"
             },
             {
-                "ingredient": "huile d'Olive",
+                "ingredient": "Huile d'Olive",
                 "quantity": 2,
                 "unit": "cuillère à soupe"
             }
