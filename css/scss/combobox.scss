@@ -1,0 +1,38 @@
+$backgroundingredientscombobox: #3282F7;
+$backgroundappliancescombobox: #68D9A4;
+$backgroundustensilscombobox: #ED6454;
+
+#combobox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.inputcombobox{
+    border-radius: 5px;
+    border: none;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    outline: none;
+    color: white;
+}
+
+.inputingredients{
+    background-color: $backgroundingredientscombobox;
+}
+
+.inputappliances{
+    background-color: $backgroundappliancescombobox;
+}
+
+.inputustensils{
+    background-color: $backgroundustensilscombobox;
+}
+
+#combobox-ingredients{
+    color: white;
+    background-color: $backgroundustensilscombobox;
+}

@@ -5,8 +5,8 @@ for(let recipe of recipes){
 }
 
 
-/*Affichage du dropdown Ingredients*/
-var ingredientsDropdown = document.querySelector('.ingredients-list');
+/*Affichage du combobox Ingredients*/
+var ingredientsDropdown = document.getElementById('ingredients-list');
 var ingredientsArray = [];
 for(let recipe of recipes){
     for(let ingredient of recipe.ingredients){
@@ -16,28 +16,12 @@ for(let recipe of recipes){
     }
 }
 for(let i=0; i<ingredientsArrayCleaned.length; i++){
-  ingredientsDropdown.innerHTML += `<p class="ingredient-item" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</p>`;
-}
-
-/* Affichage des tuiles d'ingredients recherchés */
-var tileriesZone = document.querySelector(".tileries-search");
-var tileriesZone = '';
-var selectedIngredient = document.querySelector('a[alt="${ingredientsArrayCleaned[i]}"]')
-for(let i=0; i<ingredientsArrayCleaned; i++){
-  ingredientsArrayCleaned[i] = this.ingredientsArrayCleaned;
-  ingredientsArrayCleaned[i].addEventListener('click', function(){
-    tileriesZone.innerHTML += `<div class="tile-search">
-    <p>${ingredientsArrayCleaned}</p>
-    <i class="far fa-times-circle"></i></div>`;
-    selectedIngredient.style.color = 'grey';
-  })
+  ingredientsDropdown.innerHTML += `<option class="ingredient-item" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</option>`;
 }
 
 
-
-
-/*Affichage du dropdown Appareils*/
-var applianceDropdown = document.querySelector('.appliances-list');
+/*Affichage du combobox Appareils*/
+var applianceDropdown = document.getElementById('appliances-list');
 var appliancesArray = [];
 for(let recipe of recipes){
     let appliance = recipe.appliance;
@@ -45,12 +29,12 @@ for(let recipe of recipes){
     var appliancesArrayCleaned = [...new Set(appliancesArray)];
 }
 for(let i=0; i<appliancesArrayCleaned.length; i++){
-  applianceDropdown.innerHTML += `<p class="appliance-item" alt="${appliancesArrayCleaned[i]}">${appliancesArrayCleaned[i]}</p>`
+  applianceDropdown.innerHTML += `<option class="appliance-item" alt="${appliancesArrayCleaned[i]}">${appliancesArrayCleaned[i]}</option>`
 }
 
 
-/*Affichage du dropdown Ustensiles*/
-var ustensilsDropdown = document.querySelector('.ustensils-list');
+/*Affichage du combobox Ustensiles*/
+var ustensilsDropdown = document.getElementById('ustensils-list');
 var ustensilsArray = [];
 for(let recipe of recipes){
     for(let ustensils of recipe.ustensils){
@@ -59,5 +43,17 @@ for(let recipe of recipes){
     }
 }
 for(let i=0; i<ustensilsArrayCleaned.length; i++){
-  ustensilsDropdown.innerHTML += `<p class="ustensil-item" alt="${ustensilsArrayCleaned[i]}">${ustensilsArrayCleaned[i]}</p>`
+  ustensilsDropdown.innerHTML += `<option class="ustensil-item" alt="${ustensilsArrayCleaned[i]}">${ustensilsArrayCleaned[i]}</option>`
 }
+
+/* Affichage des tuiles d'ingredients recherchés */
+/* var tileriesZone = document.querySelector(".tileries-search");
+for(let i=0; i<ingredientsArrayCleaned; i++){
+  ingredientsArrayCleaned[i] = this.ingredientsArrayCleaned;
+  ingredientsArrayCleaned[i].addEventListener('click', function(){
+    tileriesZone.innerHTML += `<div class="tile-search">
+    <p>${ingredientsArrayCleaned[i]}</p>
+    <i class="far fa-times-circle"></i></div>`;
+  })
+} */
+
