@@ -32,21 +32,21 @@
   <nav id="combobox">
 <!-- Combobox ingredients -->
     <div class="combobox-ingredients">
-      <input type=text placeholder="Rechercher un ingrédient" list=ingredients-list class="inputcombobox inputingredients">
-      <datalist id=ingredients-list >
-      </datalist>
+        <input type=text autocomplete="off" name="ingredients-list" role="combobox" placeholder="Rechercher un ingrédient" list=ingredients-list class="inputcombobox inputingredients">
+        <div id=ingredients-list role="listbox">
+        </div>
     </div>
 <!-- Combobox appareils -->
 <div class="combobox-appliances">
   <input type=text placeholder="Rechercher un appareil" list=appliances-list class="inputcombobox inputappliances">
-  <datalist id=appliances-list>
-  </datalist>
+  <div id=appliances-list>
+  </div>
 </div>
 <!-- Combobox ustensiles -->
 <div class="combobox-ustensils">
   <input type=text placeholder="Rechercher un ustensile" list=ustensils-list class="inputcombobox inputustensils">
-  <datalist id=ustensils-list >
-  </datalist>
+  <div id=ustensils-list >
+  </div>
 </div>
   </nav>
 <!-- Liste des recettes -->

@@ -9,6 +9,10 @@ $backgroundustensilscombobox: #ED6454;
     width: 50%;
 }
 
+input::placeholder{
+    color: white;
+}
+
 .inputcombobox{
     border-radius: 5px;
     border: none;
@@ -32,7 +36,6 @@ $backgroundustensilscombobox: #ED6454;
     background-color: $backgroundustensilscombobox;
 }
 
-#combobox-ingredients{
-    color: white;
-    background-color: $backgroundustensilscombobox;
+#ingredients-list, #appliances-list, #ustensils-list{
+    display: none;
 }

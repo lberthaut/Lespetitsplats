@@ -16,9 +16,13 @@ for(let recipe of recipes){
     }
 }
 for(let i=0; i<ingredientsArrayCleaned.length; i++){
-  ingredientsDropdown.innerHTML += `<option class="ingredient-item" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</option>`;
+  ingredientsDropdown.innerHTML += `<p class="ingredient-item" value="${ingredientsArrayCleaned[i]}" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</p>`;
 }
 
+var inputIngredients = document.getElementsByClassName('inputingredients');
+inputIngredients.addEventListener('keyup', function(){
+
+})
 
 /*Affichage du combobox Appareils*/
 var applianceDropdown = document.getElementById('appliances-list');
@@ -29,7 +33,7 @@ for(let recipe of recipes){
     var appliancesArrayCleaned = [...new Set(appliancesArray)];
 }
 for(let i=0; i<appliancesArrayCleaned.length; i++){
-  applianceDropdown.innerHTML += `<option class="appliance-item" alt="${appliancesArrayCleaned[i]}">${appliancesArrayCleaned[i]}</option>`
+  applianceDropdown.innerHTML += `<p class="appliance-item" value="${appliancesArrayCleaned[i]}" alt="${appliancesArrayCleaned[i]}">${appliancesArrayCleaned[i]}</p>`
 }
 
 
@@ -43,7 +47,7 @@ for(let recipe of recipes){
     }
 }
 for(let i=0; i<ustensilsArrayCleaned.length; i++){
-  ustensilsDropdown.innerHTML += `<option class="ustensil-item" alt="${ustensilsArrayCleaned[i]}">${ustensilsArrayCleaned[i]}</option>`
+  ustensilsDropdown.innerHTML += `<p class="ustensil-item" value="${ustensilsArrayCleaned[i]}" alt="${ustensilsArrayCleaned[i]}">${ustensilsArrayCleaned[i]}</p>`
 }
 
 /* Affichage des tuiles d'ingredients recherchés */
@@ -56,4 +60,3 @@ for(let i=0; i<ingredientsArrayCleaned; i++){
     <i class="far fa-times-circle"></i></div>`;
   })
 } */
-
