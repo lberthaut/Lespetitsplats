@@ -1,4 +1,9 @@
-function itemsSearchTool(ingredientsArrayCleaned){
-    var reg = new RegExp("^[a-zA-Z]{1,99}/i$")
-    var filtred = ingredientsArrayCleaned.filter(reg);
+function loadIngredients(){
+var items = Array.from (document.getElementsByClassName('ingredient-item'));
+return items.map(el => el.dataset.value);
+}
+
+function itemsSearchTool(){
+    let ingredient = loadIngredients();
+    var inputs = document.getElementById('inputingredients').value;
 }
