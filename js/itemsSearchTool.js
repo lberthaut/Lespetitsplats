@@ -1,21 +1,21 @@
 function loadIngredients(){
-    var items = Array.from (document.getElementsByClassName('ingredient-item'));
-    return items.map(el => el.dataset.value);
+    var ingredientItem = Array.from (document.getElementsByClassName('ingredient-item'));
+    return ingredientItem.map(el => el.dataset.value);
 }
 
 function loadAplliances(){
-    var items = Array.from (document.getElementsByClassName('appliance-item'));
-    return items.map(el => el.dataset.value);
+    var applianceItem = Array.from (document.getElementsByClassName('appliance-item'));
+    return applianceItem.map(el => el.dataset.value);
     }
 
 function loadUstensils(){
-    var items = Array.from (document.getElementsByClassName('ustensil-item'));
-    return items.map(el => el.dataset.value);
+    var ustensilItem = Array.from (document.getElementsByClassName('ustensil-item'));
+    return ustensilItem.map(el => el.dataset.value);
     }
     
 
 function itemsSearchTool(){
-    return inputs = document.getElementById('inputingredients').value;
+    return ingredientInput = document.getElementById('inputingredients').value;
 }
 
 var searchTool = itemsSearchTool();

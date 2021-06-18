@@ -10,7 +10,8 @@ function showIngredients(){
         }
     }
     for(let i=0; i<ingredientsArrayCleaned.length; i++){
-      ingredientsBox.innerHTML += `<p class="ingredient-item" data-value="${ingredientsArrayCleaned[i]}" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</p>`;
+      var ingredientLine = `<p class="ingredient-item" data-value="${ingredientsArrayCleaned[i]}" alt="${ingredientsArrayCleaned[i]}">${ingredientsArrayCleaned[i]}</p>`;
+      ingredientsBox.innerHTML += ingredientLine
     }
 
 }

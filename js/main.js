@@ -12,11 +12,13 @@ showUstensils()
 
 document.querySelectorAll('.inputcombobox').forEach(searchbar => {
   searchbar.addEventListener('input', function () {
+  var ingredientsBox = document.getElementById('ingredients-list');
   var searchTool = itemsSearchTool();
   if(searchTool.length<3){
   } else{
-  showIngredients(filteredItems);
-}
+    ingredientsBox.innerHTML = "";
+    showIngredients(filteredItems);
+    }
   })
 })
 
