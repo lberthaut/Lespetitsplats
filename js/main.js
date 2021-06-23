@@ -4,35 +4,27 @@ for(let recipe of recipes){
   recipeElement.innerHTML += recipe.show();
 }
 
-showIngredients();
-showAppliances()
-showUstensils()
+showIngredients(loadIngredients(recipes));
+showAppliances(loadAppliances(recipes));
+showUstensils(loadUstensils(recipes));
 
 
 
 document.querySelectorAll('.inputcombobox').forEach(searchbar => {
   searchbar.addEventListener('input', function () {
-  var ingredientsBox = document.getElementById('ingredients-list');
-  var appliancesBox = document.getElementById('appliances-list');
-  var ustensilsBox = document.getElementById('ustensils-list');
-  if(ingredientsSearchTool.length<3){
-  } else{
-    ingredientsBox.innerHTML = "";
-    showIngredients(filteredIngredients);
+    let show = window['show'+this.dataset.item[0].toUpperCase()+this.dataset.item.slice(1)+'s'];
+    if(this.value.length >= 3){
+      let items = searchItem(this.value, recipes, this.dataset.item);
+      show(items);
+    } else{
+        let load = window['load'+this.dataset.item[0].toUpperCase()+this.dataset.item.slice(1)+'s'];
+        show(load(recipes));
     }
   })
-})
-
-
-
-
-/* Affichage des tuiles d'ingredients recherchés */
-/* var tileriesZone = document.querySelector(".tileries-search");
-for(let i=0; i<ingredientsArrayCleaned; i++){
-  ingredientsArrayCleaned[i] = this.ingredientsArrayCleaned;
-  ingredientsArrayCleaned[i].addEventListener('click', function(){
-    tileriesZone.innerHTML += `<div class="tile-search">
-    <p>${ingredientsArrayCleaned[i]}</p>
-    <i class="far fa-times-circle"></i></div>`;
+  searchbar.addEventListener('blur', function (){
+    this.closest('.combobox').querySelector('.combo-list').classList.remove('activ');
   })
-} */
+  searchbar.addEventListener('focus', function (){
+    this.closest('.combobox').querySelector('.combo-list').classList.add('activ');
+  })
+})

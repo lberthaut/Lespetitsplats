@@ -1,28 +1,33 @@
-/* Valeurs des ingredients et de la barre de recherche ingredients */
-function loadIngredients(){
-    var ingredientItem = Array.from (document.getElementsByClassName('ingredient-item'));
-    return ingredientItem.map(el => el.dataset.value);
+function searchItem(term, recipes, item) {
+    let fn = window['load'+item[0].toUpperCase()+item.slice(1)+'s'];
+    return fn(recipes).filter(i => i.toLowerCase().includes(term.toLowerCase()));
 }
-var ingredientsValues = loadIngredients();
-var ingredientsSearchTool = document.getElementById('inputingredients').value;
-const filteredIngredients = ingredientsValues.filter(i => i.includes(ingredientsSearchTool));
 
-
-/* Valeurs des appareils et de la barre de recherche appareils */
-function loadAplliances(){
-    var applianceItem = Array.from (document.getElementsByClassName('appliance-item'));
-    return applianceItem.map(el => el.dataset.value);
+function loadIngredients(recipes) {
+    var ingredientsArray = [];
+    for (let recipe of recipes) {
+        for (let ingredient of recipe.ingredients) {
+            ingredientsArray.push(ingredient.ingredient);
+        }
+    }
+    return [...new Set(ingredientsArray)];
 }
-var appliancesValues = loadAplliances();
-var appliancesSearchTool =  document.getElementById('inputappliances').value;
-const filteredAppliances = appliancesValues.filter(i => i.includes(appliancesSearchTool));
 
+function loadAppliances(recipes) {
+    var appliancesArray = [];
+    for (let recipe of recipes) {
+        appliancesArray.push(recipe.appliance);
 
-/* Valeurs des ustensils et de la barre de recherche ustensils */
-function loadUstensils(){
-    var ustensilItem = Array.from (document.getElementsByClassName('ustensil-item'));
-    return ustensilItem.map(el => el.dataset.value);
-}  
-var ustensilsValues = loadUstensils();
-var ustensilsSearchTool =  document.getElementById('inputustensils').value;
-const filteredUstensils = ustensilsValues.filter(i => i.includes(ustensilsSearchTool));
+    }
+    return [...new Set(appliancesArray)];
+}
+
+function loadUstensils(recipes) {
+    var ustensilsArray = [];
+    for (let recipe of recipes) {
+        for (let ustensils of recipe.ustensils) {
+            ustensilsArray.push(ustensils);
+        }
+    }
+    return [...new Set(ustensilsArray)];
+}

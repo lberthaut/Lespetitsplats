@@ -24,18 +24,38 @@ input::placeholder{
     color: white;
 }
 
-#inputingredients{
+#inputingredients, #ingredients-list{
     background-color: $backgroundingredientscombobox;
 }
 
-#inputappliances{
+#inputappliances, #appliances-list{
     background-color: $backgroundappliancescombobox;
 }
 
-#inputustensils{
+#inputustensils, #ustensils-list{
     background-color: $backgroundustensilscombobox;
 }
 
-/* #ingredients-list, #appliances-list, #ustensils-list{
+#ingredients-list, #appliances-list, #ustensils-list{
+    position: absolute;
+    width: 185px;
+    color: white;
+    padding-left: 12px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.ingredient-item, .appliance-item, .ustensil-item{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.combo-list{
     display: none;
-} */
+}
+
+.combo-list.activ{
+    display: block;
+}
