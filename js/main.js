@@ -4,12 +4,13 @@ for(let recipe of recipes){
   recipeElement.innerHTML += recipe.show();
 }
 
+/*Affichages des items dans les combobox */
 showIngredients(loadIngredients(recipes));
 showAppliances(loadAppliances(recipes));
 showUstensils(loadUstensils(recipes));
 
 
-
+/* Rechercher des items dans les combobox */
 document.querySelectorAll('.inputcombobox').forEach(searchbar => {
   searchbar.addEventListener('input', function () {
     let show = window['show'+this.dataset.item[0].toUpperCase()+this.dataset.item.slice(1)+'s'];
@@ -37,3 +38,5 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
     }
   })
 })
+
+/*Affichage des tuiles de recherches*/

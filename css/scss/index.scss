@@ -47,7 +47,7 @@ header{
     margin-top: 17px;
 }
 
-.tile-search{
+.tile-searched{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -61,12 +61,12 @@ header{
     padding-bottom: 4px;
 }
 
-.tile-search>p{
+.tile-searched>p{
     margin: 0;
     padding-right: 5px;
 }
 
-.tile-search>i{
+.tile-searched>i{
     cursor: pointer;
 }
 
