@@ -16,15 +16,24 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
     if(this.value.length >= 3){
       let items = searchItem(this.value, recipes, this.dataset.item);
       show(items);
+      this.style.width="185px";
+      this.closest('.combobox').querySelector('.combo-list').style.flexDirection="column";
     } else{
+        this.closest('.combobox').querySelector('.combo-list').style.flexDirection="row";
         let load = window['load'+this.dataset.item[0].toUpperCase()+this.dataset.item.slice(1)+'s'];
         show(load(recipes));
+        this.style.width="555px";
     }
   })
   searchbar.addEventListener('blur', function (){
     this.closest('.combobox').querySelector('.combo-list').classList.remove('activ');
+    this.style.width="185px";
   })
   searchbar.addEventListener('focus', function (){
     this.closest('.combobox').querySelector('.combo-list').classList.add('activ');
+    this.style.width="555px";
+    if(this.value.length >= 3){
+      this.style.width="185px";
+    }
   })
 })
