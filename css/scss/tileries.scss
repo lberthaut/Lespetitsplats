@@ -1,0 +1,53 @@
+$backgroundingredients: #3282F7;
+$backgroundappliances: #68D9A4;
+$backgroundustensils: #ED6454;
+
+
+
+#tileries-searched{
+    width: 100%;
+    margin-top: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom : 10px;
+}
+
+.tile-ingredient-searched, .tile-appliance-searched, .tile-ustensil-searched{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-right: 10px;
+}
+
+.tile-ingredient-searched{
+    background-color: $backgroundingredients;
+}
+
+.tile-appliance-searched{
+    background-color: $backgroundappliances;
+}
+
+.tile-ustensil-searched{
+    background-color: $backgroundustensils;
+}
+
+.tile-ingredient-searched>p, .tile-appliance-searched>p, .tile-ustensil-searched>p{
+    margin: 1px;
+}
+
+.tile-ingredient-searched>i, .tile-appliance-searched>i, .tile-ustensil-searched>i{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.tile.remove{
+    display: none;
+}

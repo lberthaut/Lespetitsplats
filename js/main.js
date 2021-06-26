@@ -26,10 +26,14 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
         this.style.width="555px";
     }
   })
-  searchbar.addEventListener('blur', function (){
-    this.closest('.combobox').querySelector('.combo-list').classList.remove('activ');
-    this.style.width="185px";
-  })
+
+/* searchbar.addEventListener('blur', function (){
+    if(this.closest('.combobox').querySelector('.combo-list').addEventListener('click', function(){})){
+    }else{
+      this.closest('.combobox').querySelector('.combo-list').classList.remove('activ');
+      this.style.width="185px";}
+  }) */
+
   searchbar.addEventListener('focus', function (){
     this.closest('.combobox').querySelector('.combo-list').classList.add('activ');
     this.style.width="555px";
@@ -39,4 +43,13 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
   })
 })
 
-/*Affichage des tuiles de recherches*/
+/*Affichage des tuiles*/
+/* var tileriesArea = document.getElementById('tileries-searched');
+var items = this.parentNode('.combobox').dataset.item;
+document.querySelectorAll(items+'item').forEach(item => {
+  item.addEventListener('click', function () {
+    var items = this.parentNode('.combobox').dataset.item;
+    tileriesArea += item.show();
+  })
+}) */
+

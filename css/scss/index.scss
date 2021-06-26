@@ -1,6 +1,5 @@
 $searchbarcolor: #E7E7E7;
 $backgroundimage: #C7BEBE;
-$backgrounddatas: #E7E7E7;
 
 
 
@@ -41,33 +40,6 @@ header{
     font-size: 32px;
     border-radius: 0px 5px 5px 0px;
     padding-right: 20px;
-}
-
-.tileries-search{
-    margin-top: 17px;
-}
-
-.tile-searched{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 5px;
-    color: black;
-    position: absolute;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.tile-searched>p{
-    margin: 0;
-    padding-right: 5px;
-}
-
-.tile-searched>i{
-    cursor: pointer;
 }
 
 #recipes-list{

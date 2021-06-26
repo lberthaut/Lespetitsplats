@@ -13,7 +13,7 @@ function showAppliances(listAppliances){
     var applianceBox = document.getElementById('appliances-list');
     applianceBox.innerHTML = '';
     for(let appliance of listAppliances){
-    applianceBox.innerHTML += `<p class="appliance-item" data-value="${appliance}" alt="${appliance}">${appliance}</p>`
+        applianceBox.innerHTML += `<p class="appliance-item" data-value="${appliance}" alt="${appliance}">${appliance}</p>`
     }
 }
 
@@ -23,6 +23,6 @@ function showUstensils(listUstensils){
     var ustensilsBox = document.getElementById('ustensils-list');
     ustensilsBox.innerHTML = '';
     for(let ustensil of listUstensils){
-    ustensilsBox.innerHTML += `<p class="ustensil-item" data-value="${ustensil}" alt="${ustensil}">${ustensil}</p>`
+        ustensilsBox.innerHTML += `<p class="ustensil-item" data-value="${ustensil}" alt="${ustensil}">${ustensil}</p>`
     }
 }
