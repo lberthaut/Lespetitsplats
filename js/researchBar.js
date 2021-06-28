@@ -1,16 +1,18 @@
 const researchBarr = document.getElementById('searchbarr');
+const recipesArea = document.getElementById('recipes-list');
 
 
-function recipesName(){
+function recipesNames(recipes){
     const arrayNames = [];
     for (let recipe of recipes){
         arrayNames.push(recipe.name);
     }
     return arrayNames;
 }
+const namesRecipes = recipesNames(recipes);
 
 
-function recipesIngredients (){
+function recipesIngredients (recipes){
     const arrayIngredients = [];
     for (let recipe of recipes) {
         for (let ingredient of recipe.ingredients) {
@@ -20,30 +22,27 @@ function recipesIngredients (){
     return arrayIngredients;
 }
 
-var test = recipesIngredients();
 
-
-function recipesDescription (){
+function recipesDescriptions (recipes){
     const arrayDescription = [];
     for(let recipe of recipes){
         var splitDescription = recipe.description.split(' ');
-        for(let words of splitDescription){
-            arrayDescription.push(words);
-            for(let i=0; i<arrayDescription.length; i++){
-                
-            }
+        for(let word of splitDescription){
+            arrayDescription.push(word);
+            var wordLength = arrayDescription.filter(word => word.length <= 2);
+            arrayDescription.splice(wordLength);
         }
     }
     return arrayDescription;
 }
 
-var globalArray = recipesName().concat(recipesIngredients()).concat(recipesDescription());
 
-var globalArrayCleaned = [...new Set(globalArray)];
 
-researchBarr.addEventListener('input', function (){
+researchBarr.addEventListener('input', function (namesRecipes, recipe){
     var searchValue = this.value;
     if(searchValue.length>= 3){
-
+        const filteredRecipes = namesRecipes.filter(p => p.value.includes(searchValue));
+        recipesArea.innerHTML = '';
+        recipe.show(filteredRecipes);
     }
 })
