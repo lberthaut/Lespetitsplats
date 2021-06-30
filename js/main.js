@@ -1,11 +1,14 @@
 /*Affichage des recettes*/
 function loadRecipes(recipes){
-var recipeElement = document.getElementById('recipes-list');
-recipeElement.innerHTML = '';
-for(let recipe of recipes){
-  recipeElement.innerHTML += recipe.show();
-}
-}
+  var recipeElement = document.getElementById('recipes-list');
+  recipeElement.innerHTML = '';
+  for(let recipe of recipes){
+    recipeElement.innerHTML += recipe.show();
+  }
+  }
+  
+  
+  loadRecipes(recipes);
 
 
 loadRecipes(recipes);
