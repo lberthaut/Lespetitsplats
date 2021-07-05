@@ -43,13 +43,3 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
   })
 })
 
-/*Affichage des tuiles*/
-/* var tileriesArea = document.getElementById('tileries-searched');
-var items = this.parentNode('.combobox').dataset.item;
-document.querySelectorAll(items+'item').forEach(item => {
-  item.addEventListener('click', function () {
-    var items = this.parentNode('.combobox').dataset.item;
-    tileriesArea += item.show();
-  })
-}) */
-
