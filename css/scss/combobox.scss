@@ -61,11 +61,16 @@ input::placeholder{
     margin-bottom: 10px;
 }
 
+.ingredient-item.disabled, .appliance-item.disabled, .ustensil-item.disabled{
+    color: grey;
+    cursor: default;
+}
+
 .combo-list{
     display: none;
 }
 
-.combo-list.activ, .combo-list.let{
+.combo-list.activ{
     display: flex;
     border-radius: 0px 0px 5px 5px;
 }
