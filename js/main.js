@@ -7,7 +7,6 @@ function loadRecipes(recipes){
   }
   }
   
-  
   loadRecipes(recipes);
 
 /*Affichages des items dans les combobox */
@@ -33,12 +32,12 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
     }
   })
 
-/* searchbar.addEventListener('blur', function (){
+ searchbar.addEventListener('blur', function (){
     if(this.closest('.combobox').querySelector('.combo-list').addEventListener('click', function(){})){
     }else{
       this.closest('.combobox').querySelector('.combo-list').classList.remove('activ');
       this.style.width="185px";}
-  }) */
+  })
 
   searchbar.addEventListener('focus', function (){
     this.closest('.combobox').querySelector('.combo-list').classList.add('activ');
@@ -48,14 +47,3 @@ document.querySelectorAll('.inputcombobox').forEach(searchbar => {
     }
   })
 })
-
-/*Affichage des tuiles*/
-/* var tileriesArea = document.getElementById('tileries-searched');
-var items = this.parentNode('.combobox').dataset.item;
-document.querySelectorAll(items+'item').forEach(item => {
-  item.addEventListener('click', function () {
-    var items = this.parentNode('.combobox').dataset.item;
-    tileriesArea += item.show();
-  })
-}) */
-

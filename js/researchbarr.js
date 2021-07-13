@@ -25,8 +25,7 @@ function globalValue(word){
 researchBarr.addEventListener('input', async function (){
     var searchValue = this.value;
     if(searchValue.length>= 3){
-
-        await SearchAsync.globalValue(searchValue)
+        await SearchAsync.globalValue(searchValue);
         loadRecipes(SearchAsync.result);
     }else if(searchValue.length == 0){
         loadRecipes(recipes);
