@@ -12,12 +12,18 @@ class Timer {
 
     static test(term, nb){
         new Promise(async (resolve, reject)=>{
+            let ops = 0n;
             this.start('loopTimer');
         for(let i=0; i<nb; i++){
             await SearchAsync.globalValue(term);
+            ops += 1n;
         }
-        resolve( this.stop('loopTimer'));
+        let time = this.stop('loopTimer');
+        resolve({
+            time: time,
+            ops: parseInt((ops * 1000000000n)/BigInt(time*1000000),10)
         })
-        .then(time =>  console.log(`Temps d'execution :${time} ms pour ${nb} executions`));
+        })
+        .then(result =>  console.log(` ${nb} executions \n Temps d'execution :${result.time} ms \n opérations/s: ${result.ops} `));
     }
 }
