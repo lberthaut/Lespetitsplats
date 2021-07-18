@@ -1,9 +1,17 @@
 /*Affichage des recettes*/
-var recipeElement = document.getElementById("recipes-list");
-for (let recipe of recipes) {
-  recipeElement.innerHTML += recipe.show();
-}
+function loadRecipes(recipes){
+  var recipeElement = document.getElementById('recipes-list');
+  recipeElement.innerHTML = '';
+  for(let recipe of recipes){
+    recipeElement.innerHTML += recipe.show();
+  }
+  }
+  
+  
+  loadRecipes(recipes);
 
+
+loadRecipes(recipes);
 /*Affichages des items dans les combobox */
 showIngredients(loadIngredients(recipes));
 showAppliances(loadAppliances(recipes));
