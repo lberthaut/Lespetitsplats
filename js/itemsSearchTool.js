@@ -17,7 +17,6 @@ function loadAppliances(recipes) {
     var appliancesArray = [];
     for (let recipe of recipes) {
         appliancesArray.push(recipe.appliance);
-
     }
     return [...new Set(appliancesArray)];
 }

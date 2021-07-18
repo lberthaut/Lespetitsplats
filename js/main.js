@@ -6,12 +6,10 @@ function loadRecipes(recipes){
     recipeElement.innerHTML += recipe.show();
   }
   }
-  
-  
   loadRecipes(recipes);
 
 
-loadRecipes(recipes);
+
 /*Affichages des items dans les combobox */
 showIngredients(loadIngredients(recipes));
 showAppliances(loadAppliances(recipes));
@@ -20,42 +18,22 @@ showUstensils(loadUstensils(recipes));
 /* Rechercher des items dans les combobox */
 document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
   searchbar.addEventListener("input", function () {
-    let show =
-      window[
-        "show" +
-          this.closest('.combobox').dataset.item[0].toUpperCase() +
-          this.closest('.combobox').dataset.item.slice(1) +
-          "s"
-      ];
+    let show =window[ "show" + this.closest('.combobox').dataset.item[0].toUpperCase() + this.closest('.combobox').dataset.item.slice(1) + "s"];
     if (this.value.length >= 3) {
       let items = searchItem(this.value, recipes, this.closest('.combobox').dataset.item);
       show(items);
       this.style.width = "185px";
-      this.closest(".combobox").querySelector(
-        ".combo-list"
-      ).style.flexDirection = "column";
+      this.closest(".combobox").querySelector(".combo-list").style.flexDirection = "column";
     } else {
-      this.closest(".combobox").querySelector(
-        ".combo-list"
-      ).style.flexDirection = "row";
-      let load =
-        window[
-          "load" +
-            this.closest('.combobox').dataset.item[0].toUpperCase() +
-            this.closest('.combobox').dataset.item.slice(1) +
-            "s"
-        ];
+      this.closest(".combobox").querySelector(".combo-list").style.flexDirection = "row";
+      let load =window["load" + this.closest('.combobox').dataset.item[0].toUpperCase() + this.closest('.combobox').dataset.item.slice(1) + "s" ];
       show(load(recipes));
       this.style.width = "555px";
     }
   });
 
-
-
   searchbar.addEventListener("focus", function () {
-    this.closest(".combobox")
-      .querySelector(".combo-list")
-      .classList.add("activ");
+    this.closest(".combobox").querySelector(".combo-list").classList.add("activ");
     this.style.width = "555px";
     if (this.value.length >= 3) {
       this.style.width = "185px";
