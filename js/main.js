@@ -9,11 +9,11 @@ function loadRecipes(recipes){
   loadRecipes(recipes);
 
 
-
 /*Affichages des items dans les combobox */
 showIngredients(loadIngredients(recipes));
 showAppliances(loadAppliances(recipes));
 showUstensils(loadUstensils(recipes));
+
 
 /* Rechercher des items dans les combobox */
 document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
@@ -44,9 +44,7 @@ document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
 document.addEventListener("click", function (e) {
   document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
     if (e.target != searchbar && e.target.closest(".combobox") != searchbar.closest('.combobox')) {
-      searchbar.closest(".combobox")
-        .querySelector(".combo-list")
-        .classList.remove("activ");
+      searchbar.closest(".combobox").querySelector(".combo-list").classList.remove("activ");
       searchbar.style.width = "185px";
     }
   });

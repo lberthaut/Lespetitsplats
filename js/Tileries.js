@@ -1,5 +1,6 @@
 const tileriesArea = document.getElementById('tileries-searched');
 
+
 document.querySelectorAll('.appliance-item, .ingredient-item, .ustensil-item').forEach(e => e.addEventListener('click', function (){
     let value = this.dataset.value;
    this.classList.add('disabled');
@@ -11,6 +12,7 @@ document.querySelectorAll('.appliance-item, .ingredient-item, .ustensil-item').f
     closeTile();
     }
 ))
+
 
 function closeTile(){
     document.querySelectorAll('.tile-close').forEach(e => e.addEventListener('click', function (){

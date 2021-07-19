@@ -1,3 +1,4 @@
+
 class Ingredient{
     constructor(ingredient){
         ingredient && Object.assign(this, ingredient);
