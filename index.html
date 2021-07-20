@@ -19,13 +19,13 @@
   </header>
 <!-- Barre de Recherche -->  
   <nav>
-    <form class="search-barr-button">
+    <label class="search-barr-button" for="searchbarr">
       <input type="text" name="searchbarr" placeholder="Rechercher un ingrédient, appareil, ustensile ou une recette"
         id="searchbarr" class="form-control form-control-lg" />
       <i class="fas fa-search search-button"></i>
-    </form>
+    </label>
   </nav>
-  <h1></h1>
+  <h1>Recherche</h1>
 <!-- Tuiles de recherche -->
   <section id="tileries-searched">
   </section>
@@ -33,19 +33,25 @@
   <nav id="combobox">
 <!-- Combobox ingredients -->
     <div class="combobox-ingredients combobox" data-item="ingredient">
-        <input type=text name="ingredients-list" role="combobox" placeholder="Rechercher un ingrédient" id="inputingredients" class="inputcombobox">
+      <label for="inputingredients">
+        <input type=text name="ingredients-list" role="combobox" placeholder="Rechercher un ingrédient" id="inputingredients" class="inputcombobox" aria-expanded="true">
+    </label>
         <div id="ingredients-list" class="combo-list">
         </div>
     </div>
 <!-- Combobox appareils -->
 <div class="combobox-appliances combobox" data-item="appliance">
-  <input type=text name="appliances-list" role="combobox" placeholder="Rechercher un appareil" id="inputappliances" class="inputcombobox">
+  <label for="inputappliances">
+    <input type=text name="appliances-list" role="combobox" placeholder="Rechercher un appareil" id="inputappliances" class="inputcombobox" aria-expanded="true">
+</label>
   <div id="appliances-list" class="combo-list">
   </div>
 </div>
 <!-- Combobox ustensiles -->
 <div class="combobox-ustensils combobox" data-item="ustensil">
-  <input type=text name="ustensils-list" role="combobox" placeholder="Rechercher un ustensile" id="inputustensils" class="inputcombobox">
+  <label for="inputustensils">
+    <input type=text name="ustensils-list" role="combobox" placeholder="Rechercher un ustensile" id="inputustensils" class="inputcombobox" aria-expanded="true">
+</label>
   <div id="ustensils-list" class="combo-list">
   </div>
 </div>

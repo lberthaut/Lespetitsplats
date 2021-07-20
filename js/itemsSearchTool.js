@@ -3,6 +3,7 @@ function searchItem(term, recipes, item) {
     return fn(recipes).filter(i => i.toLowerCase().includes(term.toLowerCase()));
 }
 
+/*Génération des ingredients pour combobox ingredients*/
 function loadIngredients(recipes) {
     var ingredientsArray = [];
     for (let recipe of recipes) {
@@ -13,6 +14,7 @@ function loadIngredients(recipes) {
     return [...new Set(ingredientsArray)];
 }
 
+/*Génération des appareils pour combobox appareils*/
 function loadAppliances(recipes) {
     var appliancesArray = [];
     for (let recipe of recipes) {
@@ -21,6 +23,7 @@ function loadAppliances(recipes) {
     return [...new Set(appliancesArray)];
 }
 
+/*Génération des ustensiles pour combobox ustensils*/
 function loadUstensils(recipes) {
     var ustensilsArray = [];
     for (let recipe of recipes) {

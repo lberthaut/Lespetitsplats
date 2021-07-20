@@ -1,4 +1,4 @@
-
+/*Affichage des ingredients dans les recettes */
 class Ingredient{
     constructor(ingredient){
         ingredient && Object.assign(this, ingredient);

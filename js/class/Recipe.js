@@ -1,3 +1,4 @@
+/*Affichage des recettes */
 class Recipe{
     constructor(recipe){
         recipe && Object.assign(this, recipe);

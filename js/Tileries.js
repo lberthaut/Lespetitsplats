@@ -1,7 +1,8 @@
 const tileriesArea = document.getElementById('tileries-searched');
 
-
-document.querySelectorAll('.appliance-item, .ingredient-item, .ustensil-item').forEach(e => e.addEventListener('click', function (){
+/*Affichage des tuiles selon l'item cliqué dans un combobox*/
+function tiles(selector){
+document.querySelectorAll(selector).forEach(e => e.addEventListener('click', function (){
     let value = this.dataset.value;
    this.classList.add('disabled');
    let combobox = this.closest('.combobox');
@@ -10,10 +11,14 @@ document.querySelectorAll('.appliance-item, .ingredient-item, .ustensil-item').f
     <i class="far fa-times-circle tile-close"></i>
     </div>`
     closeTile();
+    const searchValue = document.getElementById('searchbarr').value;
+    loadRecipes(globalValue(searchValue));
     }
 ))
+}
+tiles('.appliance-item, .ingredient-item, .ustensil-item');
 
-
+/*Fermeture des tuiles*/
 function closeTile(){
     document.querySelectorAll('.tile-close').forEach(e => e.addEventListener('click', function (){
         var tile = this.closest('.tile');
@@ -22,6 +27,8 @@ function closeTile(){
         if(item != null){
            item.classList.remove('disabled');
            tile.remove();
+           const searchValue = document.getElementById('searchbarr').value;
+           loadRecipes(globalValue(searchValue));
         }
     }))
 }

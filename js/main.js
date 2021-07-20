@@ -30,8 +30,10 @@ document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
       show(load(recipes));
       this.style.width = "555px";
     }
+    tiles( "." + this.closest('.combobox').dataset.item + "-item");
   });
 
+  /*Affichage des listes d'items */
   searchbar.addEventListener("focus", function () {
     this.closest(".combobox").querySelector(".combo-list").classList.add("activ");
     this.style.width = "555px";
@@ -41,6 +43,7 @@ document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
   });
 });
 
+/*Fermeture des combobox */
 document.addEventListener("click", function (e) {
   document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
     if (e.target != searchbar && e.target.closest(".combobox") != searchbar.closest('.combobox')) {

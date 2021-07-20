@@ -41,6 +41,11 @@ header{
     padding-right: 20px;
 }
 
+h1{
+    visibility: hidden;
+    height: 0;
+}
+
 #recipes-list{
     width: 100%;
     display: flex;

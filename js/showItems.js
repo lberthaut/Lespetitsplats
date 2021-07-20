@@ -1,4 +1,4 @@
-/*Affichage de la liste Ingredients*/
+/*Affichage de la liste Ingredients dans son combobox*/
 function showIngredients(listIngredients){
     var ingredientsBox = document.getElementById('ingredients-list');
     ingredientsBox.innerHTML = '';
@@ -8,7 +8,7 @@ function showIngredients(listIngredients){
 }
 
 
-/*Affichage de la liste Appareils*/
+/*Affichage de la liste Appareils dans son combobox*/
 function showAppliances(listAppliances){
     var applianceBox = document.getElementById('appliances-list');
     applianceBox.innerHTML = '';
@@ -18,7 +18,7 @@ function showAppliances(listAppliances){
 }
 
 
-/*Affichage de la liste Ustensiles*/
+/*Affichage de la liste Ustensiles dans son combobox*/
 function showUstensils(listUstensils){
     var ustensilsBox = document.getElementById('ustensils-list');
     ustensilsBox.innerHTML = '';
