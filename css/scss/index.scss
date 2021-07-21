@@ -41,9 +41,10 @@ header{
     padding-right: 20px;
 }
 
-h1{
+.hide{
     visibility: hidden;
     height: 0;
+    width: 0;
 }
 
 #recipes-list{

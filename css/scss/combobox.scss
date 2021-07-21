@@ -29,6 +29,10 @@ input::placeholder{
     }
 }
 
+label{
+    margin: 0;
+}
+
 #inputingredients, #ingredients-list{
     background-color: $backgroundingredientscombobox;
 }
