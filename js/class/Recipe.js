@@ -1,15 +1,21 @@
-/*Affichage des recettes */
-class Recipe{
-    constructor(recipe){
-        recipe && Object.assign(this, recipe);
-        this.ingredients = this.ingredients.map(ingredient => new Ingredient(ingredient));
+/**
+ * Affichage des recettes
+ * @param {recipe} recipe permet de recupérer la liste des recettes
+ * @returns {Recipe} Retourne chaque recettes
+ */
+class Recipe {
+  constructor(recipe) {
+    recipe && Object.assign(this, recipe);
+    this.ingredients = this.ingredients.map(
+      (ingredient) => new Ingredient(ingredient)
+    );
+  }
+  show() {
+    let ingredientString = "";
+    for (let ingredient of this.ingredients) {
+      ingredientString += ingredient.show();
     }
-    show(){
-        let ingredientString = '';
-        for(let ingredient of this.ingredients){
-            ingredientString += ingredient.show();
-        }
-        return `<article class="recipe-card">
+    return `<article class="recipe-card">
         <div class="img-recipe" alt="photo de la recette">
           </div>
       <section class="recipe-datas">
@@ -26,5 +32,5 @@ class Recipe{
         </aside>
       </section>
     </article>`;
-    }
+  }
 }

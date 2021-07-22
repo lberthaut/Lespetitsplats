@@ -1,3 +1,8 @@
+/**
+ * Liste des recettes
+ * @param {}
+ * @returns {} La liste des recettes
+ */
 let recipes = [
     {
         "id": 1,
