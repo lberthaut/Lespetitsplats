@@ -21,6 +21,7 @@ showIngredients(loadIngredients(recipes));
 showAppliances(loadAppliances(recipes));
 showUstensils(loadUstensils(recipes));
 
+
 /**
  * Rechercher des items dans les combobox
  * @param {searchbar} searchbar pointe les trois barres de recherches liés aux items
@@ -35,7 +36,7 @@ document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
           this.closest(".combobox").dataset.item.slice(1) +
           "s"
       ];
-    if (this.value.length >= 3) {
+    if (this.value.length >= 1) {
       let items = searchItem(
         this.value,
         recipes,
@@ -66,7 +67,7 @@ document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
   /**
    * Affichage des listes d'items
    * @param {}
-   * @returns {} l'affichage des listes d'items lors du focus sur chacun de leurs barres de recerche
+   * @returns {} l'affichage des listes d'items lors du focus sur chacune de leurs barres de recerche
    */
   searchbar.addEventListener("focus", function () {
     this.closest(".combobox")
@@ -82,7 +83,7 @@ document.querySelectorAll(".inputcombobox").forEach((searchbar) => {
 /**
  *Fermeture des combobox
  * @param {}
- * @returns {} ferme les tuiles de tags
+ * @returns {} ferme les combobox
  */
 document.addEventListener("click", function (e) {
   document.querySelectorAll(".inputcombobox").forEach((searchbar) => {

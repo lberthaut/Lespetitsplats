@@ -18,6 +18,10 @@ function tiles(selector) {
       closeTile();
       const searchValue = document.getElementById("searchbarr").value;
       loadRecipes(globalValue(searchValue));
+      if(document.getElementById("recipes-list").childNodes.length == 0){
+        document.getElementById("recipes-list").innerHTML = `<p class="zerorecipes">Aucune recette ne correspond à votre critère… vous pouvez
+        chercher « tarte aux pommes », « poisson », etc </p>`
+      }
     })
   );
 }

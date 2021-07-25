@@ -36,7 +36,7 @@ function recipesDescriptions(recipes, word) {
 }
 
 /**
- * Filtres des appareils des recettes en fonction du tag cliqué
+ * Filtres des appareils des recettes en fonction du tag cliqué dans son combobox
  * @param {recipes, taglist} recipes est les recettes, taglist sera la valeur du tag cliqué
  * @returns {recipes} retourne la fonction de filtrage des appareils dans les recettes
  */
@@ -50,7 +50,7 @@ function recipesAppliances(recipes, taglist) {
 }
 
 /**
- * Filtres des ustensiles des recettes en fonction du tag cliqué
+ * Filtres des ustensiles des recettes en fonction du tag cliqué dans son combobox
  * @param {recipes, taglist} recipes est les recettes, taglist sera la valeur du tag cliqué
  * @returns {recipes} retourne la fonction de filtrage des ustensiles dans les recettes
  */
@@ -66,7 +66,7 @@ function recipesUstensils(recipes, taglist) {
 }
 
 /**
- * Filtres des ingredients des recettes en fonction du tag cliqué
+ * Filtres des ingredients des recettes en fonction du tag cliqué dans son combobox
  * @param {recipes, taglist} recipes est les recettes, taglist sera la valeur du tag cliqué
  * @returns {recipes} retourne la fonction de filtrage des ingredients dans les recettes
  */
@@ -116,6 +116,10 @@ researchBarr.addEventListener("input", function () {
   var searchValue = this.value;
   if (searchValue.length >= 3) {
     loadRecipes(globalValue(searchValue));
+    if(document.getElementById("recipes-list").childNodes.length == 0){
+      document.getElementById("recipes-list").innerHTML = `<p class="zerorecipes">Aucune recette ne correspond à votre critère… vous pouvez
+      chercher « tarte aux pommes », « poisson », etc </p>`
+    }
   } else if (searchValue.length == 0) {
     loadRecipes(recipes);
   }
