@@ -82,7 +82,7 @@ function filteredIngredientsPerTags(recipes, taglist) {
 }
 
 /**
- * Concaténage des 3 filtres précédents
+ * Concaténage des filtres précédents
  * @param {string} word permet de filtrer les recettes
  * @returns {[Recipe]} les recettes filtrées
  */
